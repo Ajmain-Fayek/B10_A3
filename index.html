@@ -19,14 +19,14 @@
 <body class="font-manrope">
 
     <!-- Header start -->
-    <header class="container mx-auto px-2 py-6 md:py-10">
+    <header class="bg-gradient-to-t from-white to-white1">
         <!-- Navbar start -->
-        <nav class="">
+        <nav class="container mx-auto px-4 md:px-2 py-6 md:py-10">
             <!-- Flex container start -->
             <div class="flex gap-4 items-center justify-between">
                 <!-- Logo -->
                 <div class="flex items-center justify-start gap-1.5">
-                    <div class="bg-green1 p-1 rounded-full">
+                    <div class="bg-green1 p-1.5 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor" class="md:size-6 size-4">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -50,7 +50,7 @@
                     <div class="hidden md:flex gap-4 xl:gap-4 items-center justify-end">
                         <!-- Search btn -->
                         <button class="btn btn-circle btn-md bg-white ">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -59,7 +59,7 @@
 
                         <!-- Add to Card btn -->
                         <button class="btn btn-circle btn-md bg-white ">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
@@ -106,8 +106,50 @@
             <!-- Flex container end -->
         </nav>
         <!-- Navbar end -->
+
+        <!-- Hero Section start -->
+        <section id="hero" class="">
+            <!-- container start -->
+            <div class="container mx-auto px-4 md:px-2 mb-16 mt-4">
+                <!-- flex container start -->
+                <div class="flex flex-col justify-center items-center gap-4 w-full">
+                    <!-- Hero image -->
+                    <div class="w-full">
+                        <img src="./assets/images/banner.png" class="md:w-3/5 w-4/5 mx-auto" alt="">
+                    </div>
+
+                    <!-- Headings -->
+                    <div class="text-center space-y-6 xl:space-y-14 lg:space-y-10">
+                        <h1 class="font-extrabold text-dark1 text-3xl md:text-6xl xl:text-7xl 2xl:text-8xl">A barn house
+                            of this design has a striking appearance</h1>
+                        <p class="font-semibold text-dark2 md:w-9/12 mx-auto text-base">The barn house captivates with
+                            its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal
+                            accents, and large windows that flood the space with natural light.</p>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="mt-10">
+                        <button class="btn rounded-full btn-md bg-green2  flex items-center">
+                            <p class="font-extrabold text-lg text-dark1">View Details</p>
+                            <div class="bg-green1 p-1 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="black" class="md:size-6 size-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <!-- flex container end -->
+            </div>
+            <!-- container end -->
+        </section>
+        <!-- Hero Section end -->
     </header>
     <!-- Header end -->
+
+    
 
     <!-- JavaScript Injection Start -->
     <script src="./assets/scripts/script.js"></script>
