@@ -1,17 +1,117 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+
+    <!-- Fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Fonts end -->
+
     <link rel="stylesheet" href="./assets/css/output.css">
     <title>Rinterio</title>
 </head>
-<body>
-    <h1 class="font-bold text-6xl">Hello world</h1>
+
+<body class="font-manrope">
+
+    <!-- Header start -->
+    <header class="container mx-auto px-2 py-6 md:py-10">
+        <!-- Navbar start -->
+        <nav class="">
+            <!-- Flex container start -->
+            <div class="flex gap-4 items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center justify-start gap-1.5">
+                    <div class="bg-green1 p-1 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="md:size-6 size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                    <h1 class="font-extrabold text-2xl md:text-4xl text-dark1">Rinterio</h1>
+                </div>
+
+                <!-- Nav links -->
+                <div class="hidden lg:flex gap-4 xl:gap-12 items-center justify-between">
+                    <a href="#" class="text-lg font-extrabold text-dark2">Home</a>
+                    <a href="#" class="text-lg font-semibold text-dark3">Service</a>
+                    <a href="#" class="text-lg font-semibold text-dark3">portfolio</a>
+                    <a href="#" class="text-lg font-semibold text-dark3">Blogs</a>
+                    <a href="#" class="text-lg font-semibold text-dark3">Contact Us</a>
+                </div>
+
+                <!-- Buttons start-->
+                <div class="flex gap-4">
+                    <div class="hidden md:flex gap-4 xl:gap-4 items-center justify-end">
+                        <!-- Search btn -->
+                        <button class="btn btn-circle btn-md bg-white ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                        </button>
+
+                        <!-- Add to Card btn -->
+                        <button class="btn btn-circle btn-md bg-white ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                        </button>
+
+                        <!-- Book consult btn -->
+                        <button class="btn rounded-full btn-md bg-green1  flex items-center">
+                            <p class="font-extrabold text-lg text-dark1">Book Consult</p>
+                            <div class="bg-dark4 p-1 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="white" class="md:size-6 size-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+
+                    <!-- Swap menu start -->
+                    <div class="lg:hidden">
+                        <label class="btn btn-circle bg-white swap swap-rotate">
+                            <!-- this hidden checkbox controls the state -->
+                            <input type="checkbox" />
+
+                            <!-- hamburger icon -->
+                            <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 512 512">
+                                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                            </svg>
+
+                            <!-- close icon -->
+                            <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 512 512">
+                                <polygon
+                                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                            </svg>
+                        </label>
+                    </div>
+                    <!-- Swap menu end -->
+                </div>
+                <!-- Buttons end -->
+            </div>
+            <!-- Flex container end -->
+        </nav>
+        <!-- Navbar end -->
+    </header>
+    <!-- Header end -->
 
     <!-- JavaScript Injection Start -->
     <script src="./assets/scripts/script.js"></script>
     <!-- JavaScript Injection End -->
 </body>
+
 </html>
