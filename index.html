@@ -21,13 +21,13 @@
 
 <body class="font-manrope">
     <!-- Header start -->
-    <header class="bg-gradient-to-t from-white to-white1">
+    <header id="home" class="bg-gradient-to-t from-white to-white1">
         <!-- Navbar start -->
         <nav class="container mx-auto px-4 md:px-2 py-6 md:py-10">
             <!-- Flex container start -->
             <div class="flex gap-4 items-center justify-between">
                 <!-- Logo -->
-                <div class="flex items-center justify-start gap-1.5">
+                <a href="#hero" class="flex items-center justify-start gap-1.5">
                     <div class="bg-green1 p-1.5 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor" class="md:size-6 size-4">
@@ -36,15 +36,15 @@
                         </svg>
                     </div>
                     <h1 class="font-extrabold text-2xl md:text-4xl text-dark1">Rinterio</h1>
-                </div>
+                </a>
 
                 <!-- Nav links -->
                 <div class="hidden lg:flex gap-4 xl:gap-12 items-center justify-between">
-                    <a href="#" class="link-hover text-lg font-extrabold text-dark2">Home</a>
-                    <a href="#" class="link-hover text-lg font-semibold text-dark3">Service</a>
-                    <a href="#" class="link-hover text-lg font-semibold text-dark3">portfolio</a>
-                    <a href="#" class="link-hover text-lg font-semibold text-dark3">Blogs</a>
-                    <a href="#" class="link-hover text-lg font-semibold text-dark3">Contact Us</a>
+                    <a href="#hero" class="link-hover text-lg font-extrabold text-dark2">Home</a>
+                    <a href="#about_us" class="link-hover text-lg font-semibold text-dark3">Service</a>
+                    <a href="#eolw" class="link-hover text-lg font-semibold text-dark3">portfolio</a>
+                    <a href="#rn" class="link-hover text-lg font-semibold text-dark3">Blogs</a>
+                    <a href="#lc" class="link-hover text-lg font-semibold text-dark3">Contact Us</a>
                 </div>
 
                 <!-- Buttons start-->
@@ -69,16 +69,18 @@
                         </button>
 
                         <!-- Book consult btn -->
-                        <button class="btn rounded-full btn-md bg-green1  flex items-center">
-                            <p class="font-extrabold text-lg text-dark1">Book Consult</p>
-                            <div class="bg-dark4 p-1 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                    stroke="white" class="md:size-6 size-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                                </svg>
-                            </div>
-                        </button>
+                        <a href="#bc">
+                            <button class="btn rounded-full btn-md bg-green1  flex items-center">
+                                <p class="font-extrabold text-lg text-dark1">Book Consult</p>
+                                <div class="bg-dark4 p-1 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="white" class="md:size-6 size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </div>
+                            </button>
+                        </a>
                     </div>
 
                     <!-- Swap menu start -->
@@ -155,7 +157,7 @@
     <!-- Main Start -->
     <main class="bg-white1">
         <!-- About Section start -->
-        <Section class="py-16 lg:py-24">
+        <Section id="about_us" class="py-16 lg:py-24">
             <!-- Container start -->
             <div class="container mx-auto px-4 md:px-2">
                 <!-- Flex container start -->
@@ -443,7 +445,7 @@
         <!-- How We Works Section End -->
 
         <!-- Explore our Latest Works Section Start -->
-        <section class="py-16 lg:py-24 bg-white">
+        <section id="eolw" class="py-16 lg:py-24 bg-white">
             <!-- Container Start -->
             <div class="container mx-auto px-4 md:px-2">
                 <!-- Flex Container Start -->
@@ -573,7 +575,7 @@
         <!-- Explore our Latest Works Section End -->
 
         <!-- Rinterio News Section Start -->
-        <section class="py-16 lg:py-24">
+        <section id="rn" class="py-16 lg:py-24">
             <!-- Containter Start -->
             <div class="container mx-auto px-4 md:px-2">
                 <!-- Flex Container Start -->
@@ -758,14 +760,103 @@
         </section>
         <!-- Rinterio News Section End -->
 
+        <!-- Book Consult Section Start -->
+        <section id="bc" class="py-16 lg:py-24">
+            <!-- Containter Start -->
+            <div class="container mx-auto px-4 md:px-2">
+                <!-- Flex Container Start -->
+                <div class="relative flex flex-col items-center justify-center gap-10 lg:items-start w-full">
+                    <!-- Book consult -->
+                    <div class="flex items-center mx-auto w-fit gap-1.5 px-5 py-2 rounded-full bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                        <p class="font-extrabold text-lg text-dark1">Book Consult</p>
+                    </div>
+
+                    <!-- Headings and text -->
+                    <div class="text-center mx-auto space-y-6">
+                        <h2 class="font-extrabold text-dark1 text-2xl md:text-4xl xl:text-5xl">
+                            We Value your Untold Idea's
+                        </h2>
+                        <p class="font-semibold mx-auto text-dark2 md:w-9/12 xl:text-lg">
+                            The barn house captivates with
+                            its blend of
+                            rustic charm and
+                            modern sophistication, featuring weathered wood, sleek metal accents.
+                        </p>
+                    </div>
+
+                    <!-- Form start -->
+                    <form id="consult_form" class="grid grid-cols-1 gap-8 w-full md:w-10/12 mx-auto">
+                        <!-- Inputs Start -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- First Name -->
+                            <div class="w-full">
+                                <input
+                                    class="w-full rounded-full py-4 px-6 sm:p-6 placeholder:text-base xl:placeholder:text-lg outline-none font-medium"
+                                    name="msg" id="" placeholder="First Name" type="text">
+                                </input>
+                            </div>
+                            <!-- Last Name -->
+                            <div class="w-full">
+                                <input
+                                    class="w-full rounded-full py-4 px-6 sm:p-6 placeholder:text-base xl:placeholder:text-lg outline-none font-medium"
+                                    name="msg" id="" placeholder="Last Name" type="text">
+                                </input>
+                            </div>
+                            <!-- Email Address -->
+                            <div class="w-full">
+                                <input
+                                    class="w-full rounded-full py-4 px-6 sm:p-6 placeholder:text-base xl:placeholder:text-lg outline-none font-medium"
+                                    name="msg" id="" placeholder="Email Address" type="email">
+                                </input>
+                            </div>
+                            <!-- DatePicker Name -->
+                            <div class="w-full">
+                                <input
+                                    class="w-full rounded-full py-4 px-6 sm:p-6 placeholder:text-base xl:placeholder:text-lg outline-none font-medium cursor-pointer bg-white"
+                                    name="msg" id="date" value="2024-08-27" type="date" min="2024-08-01"
+                                    max="2024-12-31">
+                                </input>
+                            </div>
+                    </form>
+                    <!-- Inputs End -->
+
+                    <!-- Button -->
+                    <div class="">
+                        <button class="btn rounded-full btn-md bg-green1 flex items-center w-fit mx-auto">
+                            <p class="font-extrabold text-lg text-dark1">
+                                Book Consult
+                            </p>
+                            <div class="bg-dark4 p-1 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="white" class="md:size-6 size-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <!-- Form End -->
+            </div>
+            <!-- Flex Container End -->
+            </div>
+            <!-- Containter End -->
+        </section>
+        <!-- Book Consult Section End -->
+
         <!-- Let's Connect Section Start -->
-        <section class="py-16 lg:py-24 bg-no-repeat bg-center bg-cover border border-y-8 border-white"
+        <section id="lc" class="py-16 lg:py-24 bg-no-repeat bg-center bg-cover border border-y-8 border-white"
             style="background-image: url(./assets/images/bg.jpg);">
             <!-- Containter Start -->
             <div class="container mx-auto px-4 md:px-2">
                 <!-- Flex Container Start -->
                 <div class="relative flex flex-col items-center justify-center gap-10 lg:items-start w-full">
-                    <!-- Rinterio News -->
+                    <!-- Let's Connect -->
                     <div class="flex items-center mx-auto w-fit gap-1.5 px-5 py-2 rounded-full bg-green2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
@@ -866,7 +957,7 @@
             <div class="flex flex-col items-center gap-10 md:gap-14">
                 <!-- Logo & Text -->
                 <div class="flex flex-col gap-6 items-center text-center">
-                    <div class="flex items-center justify-start gap-1.5">
+                    <a href="#hero" class="flex items-center justify-start gap-1.5">
                         <div class="bg-green1 p-1.5 rounded-full">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                 stroke="currentColor" class="md:size-6 size-4">
@@ -875,7 +966,7 @@
                             </svg>
                         </div>
                         <h1 class="font-extrabold text-2xl md:text-4xl text-white1">Rinterio</h1>
-                    </div>
+                    </a>
                     <p class="font-semibold text-dark3 text-base md:w-9/12 md:text-lg">The barn house captivates with
                         its blend of
                         rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
@@ -883,11 +974,11 @@
 
                 <!-- Nav links -->
                 <div class="flex flex-col md:flex-row gap-4 xl:gap-12 items-center justify-between md:w-10/12">
-                    <a href="#" class="link-hover text-lg font-extrabold text-white1">Home</a>
-                    <a href="#" class="link-hover text-lg font-semibold  text-white1">Service</a>
-                    <a href="#" class="link-hover text-lg font-semibold  text-white1">portfolio</a>
-                    <a href="#" class="link-hover text-lg font-semibold  text-white1">Blogs</a>
-                    <a href="#" class="link-hover text-lg font-semibold  text-white1">Contact Us</a>
+                    <a href="#hero" class="link-hover text-lg font-extrabold    text-white1">Home</a>
+                    <a href="#about_us" class="link-hover text-lg font-semibold text-white1">Service</a>
+                    <a href="#eolw" class="link-hover text-lg font-semibold     text-white1">portfolio</a>
+                    <a href="#rn" class="link-hover text-lg font-semibold       text-white1">Blogs</a>
+                    <a href="#lc" class="link-hover text-lg font-semibold       text-white1">Contact Us</a>
                 </div>
 
                 <!-- Button -->
