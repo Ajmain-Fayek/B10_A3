@@ -23,7 +23,7 @@
     <!-- Header start -->
     <header id="home" class="bg-gradient-to-t from-white to-white1">
         <!-- Navbar start -->
-        <nav class="container mx-auto px-4 md:px-2 py-6 md:py-10">
+        <nav class="container relative mx-auto px-4 md:px-2 py-6 md:py-10">
             <!-- Flex container start -->
             <div class="flex gap-4 items-center justify-between">
                 <!-- Logo -->
@@ -87,7 +87,7 @@
                     <div class="lg:hidden">
                         <label class="btn btn-circle bg-white swap swap-rotate">
                             <!-- this hidden checkbox controls the state -->
-                            <input type="checkbox" />
+                            <input id="checkbox" type="checkbox" />
 
                             <!-- hamburger icon -->
                             <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
@@ -108,6 +108,16 @@
                 <!-- Buttons end -->
             </div>
             <!-- Flex container end -->
+
+            <!-- Nav links -->
+            <div id="nav-bar"
+                class="hidden flex absolute flex-col gap-6 py-6 items-center justify-between bg-white right-6 left-6 md:top-28 top-20 rounded-xl shadow-md">
+                <a href="#hero" class="link-hover text-lg font-extrabold text-dark2">Home</a>
+                <a href="#about_us" class="link-hover text-lg font-semibold text-dark3">Service</a>
+                <a href="#eolw" class="link-hover text-lg font-semibold text-dark3">portfolio</a>
+                <a href="#rn" class="link-hover text-lg font-semibold text-dark3">Blogs</a>
+                <a href="#lc" class="link-hover text-lg font-semibold text-dark3">Contact Us</a>
+            </div>
         </nav>
         <!-- Navbar end -->
 
@@ -822,11 +832,12 @@
                                     max="2024-12-31">
                                 </input>
                             </div>
+                        </div>
                     </form>
                     <!-- Inputs End -->
 
                     <!-- Button -->
-                    <div class="">
+                    <div class="w-full">
                         <button class="btn rounded-full btn-md bg-green1 flex items-center w-fit mx-auto">
                             <p class="font-extrabold text-lg text-dark1">
                                 Book Consult
